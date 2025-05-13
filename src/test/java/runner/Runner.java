@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src\\test\\resources\\features"},	
 		glue = {"step_definations"},
-		tags = "@excelfile",  //@excelfile or @logininvalid or @login
+		tags = "@login and not @excelfile",  //@excelfile or @logininvalid or @login
 		monochrome = true,
 		dryRun = false,
 		plugin = {"pretty", "html:test-output", "json:target/cucumber-report/cucumber.json",}

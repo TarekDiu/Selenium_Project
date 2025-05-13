@@ -8,12 +8,27 @@
 
 
 	<properties>
+
 		<cucumber-java.version>5.7.0</cucumber-java.version>
 		<cucumber-junit.version>5.7.0</cucumber-junit.version>
 		<selenium-java.version>3.141.59</selenium-java.version>
 		<webdrivermanager.version>6.1.0</webdrivermanager.version>
+		<allure.cucumber5.version>2.14.0</allure.cucumber5.version>
+		<allure.junit4.version>2.14.0</allure.junit4.version>
+		<maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
+		<maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<aspectj.version>1.9.6</aspectj.version>
+		<allure.version>2.14</allure.version>
+		<slf4j.version>1.7.30</slf4j.version>
 
-		<!--<allure.cucumber5.version>2.13.9</allure.cucumber5.version>-->
+		<!--<cucumber-java.version>5.7.0</cucumber-java.version>
+		<cucumber-junit.version>5.7.0</cucumber-junit.version>
+		<selenium-java.version>3.141.59</selenium-java.version>
+		<webdrivermanager.version>6.1.0</webdrivermanager.version>
+
+		<allure.cucumber5.version>2.13.9</allure.cucumber5.version>
 
 		<allure.cucumber5.version>2.21.0</allure.cucumber5.version>
 		<allure.junit4.version>2.14.0</allure.junit4.version>
@@ -24,7 +39,7 @@
 		<maven.compiler.target>11</maven.compiler.target>
 
 		<aspectj.version>1.9.6</aspectj.version>
-		<slf4j.version>1.7.30</slf4j.version>
+		<slf4j.version>1.7.30</slf4j.version>-->
 
 	</properties>
 
@@ -146,17 +161,6 @@
 					</dependency>
 				</dependencies>
 
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
-				<configuration>
-					<systemPropertyVariables>
-						<cucumber.options>--plugin
-							io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm</cucumber.options>
-					</systemPropertyVariables>
-				</configuration>
 			</plugin>
 
 
